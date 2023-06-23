@@ -1,0 +1,2 @@
+{:tasks {dev (clojure {:extra-env {"BIFF_ENV" "dev"}} "-M -m rain.examples.ssg")
+         full-build (clojure "-X rain.examples.ssg/full-build")}}

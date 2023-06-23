@@ -1,0 +1,3 @@
+{:prod {:biff.beholder/enabled false}
+ :dev {:merge [:prod]
+       :biff.beholder/enabled true}}
