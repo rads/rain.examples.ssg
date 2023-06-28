@@ -1,6 +1,6 @@
 (ns rain.examples.ssg.app
   (:require [clojure.edn :as edn]
-            [rain.core :as rain]
+            [rain.re-frame :as rrf]
             [reitit.core :as r]))
 
 (declare href)
@@ -253,7 +253,7 @@
         :static-props (constantly data)}]]]))
 
 (def router (r/router routes))
-(def href #(apply rain/href router %&))
+(def href #(apply rrf/href-alpha router %&))
 
 (def plugin
   {:routes routes})
